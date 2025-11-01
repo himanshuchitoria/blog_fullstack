@@ -5,7 +5,7 @@ import { appRouter } from "@/server";
 export const serverClient = appRouter.createCaller({
   links: [
     httpBatchLink({
-      url: process.env.NEXT_PUBLIC_TRPC_URL || "http://localhost:3000/api/trpc",
+      url: process.env.NEXT_PUBLIC_TRPC_URL || "https://blog-fullstack-o4gm.vercel.app/api/trpc",
       // Can add headers/auth here if needed
     }),
   ],
