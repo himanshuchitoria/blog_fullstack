@@ -1,0 +1,39 @@
+{
+  "name": "trpc-drizzle",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:migration": "drizzle-kit generate:pg --schema=db/schema.ts --out=drizzle",
+    "migrate:push": "drizzle-kit migrate:pg --schema=db/schema.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.33.0",
+    "@trpc/client": "^10.38.0",
+    "@trpc/react-query": "^10.38.0",
+    "@trpc/server": "^10.38.0",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.15",
+    "drizzle-orm": "^0.28.5",
+    "next": "13.4.19",
+    "pg": "^8.10.0",
+    "postcss": "8.4.28",
+    "postgres": "^3.4.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "superjson": "^2.2.5",
+    "tailwindcss": "3.3.3",
+    "zod": "^3.22.2",
+     "next-themes": "^0.2.1"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.19.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
