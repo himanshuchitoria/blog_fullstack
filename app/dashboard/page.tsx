@@ -71,7 +71,7 @@ export default async function DashboardPage() {
               </div>
 
               <Link
-                href="/postform"
+                href="/post"
                 className="group relative block overflow-hidden rounded-3xl border border-slate-200 bg-white/60 shadow-sm transition backdrop-blur-md hover:bg-white/70 dark:border-slate-700 dark:bg-slate-900/70 dark:hover:bg-slate-900/80"
               >
                 <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-indigo-300/20 blur-3xl dark:bg-indigo-500/20" />
@@ -200,3 +200,4 @@ export default async function DashboardPage() {
     </main>
   );
 }
+
